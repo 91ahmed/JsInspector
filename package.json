@@ -1,0 +1,27 @@
+{
+  "name": "js-inspector",
+  "version": "1.0.0",
+  "description": "JsInspector is a class for data validation",
+  "main": "js-inspector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/91ahmed/JsInspector.git"
+  },
+  "keywords": [
+    "JsInspector",
+    "validator",
+    "js",
+    "validator",
+    "javascript",
+    "validation"
+  ],
+  "author": "ahmed hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/91ahmed/JsInspector/issues"
+  },
+  "homepage": "https://github.com/91ahmed/JsInspector#readme"
+}
