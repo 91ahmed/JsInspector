@@ -4,21 +4,28 @@
 		<title>Js-Inspector test</title>
 	</head>
 	<body>
-		<script src="js-inspector.js"></script>
+		<div id="c1"></div>
+		<br/>
+		<div id="c2"></div>
+
+		<script src="src/js-inspector.js"></script>
 
 		<script type="text/javascript">
 			const inspect = new JsInspector()
-			inspect.data('muhammed').field('username').alpha().required()
-			inspect.data('programmer').field('job').match('programmer')
 
-			// Get error messages
-			inspect.errors()
+			inspect.data('ahmed').field('username').alpha().required()
+			inspect.data('ahmed@gmail.com').field('email').email().required()
+			inspect.data('123678687').field('password').max(30).min(8).required()
 
 			// Check validation
 			if(inspect.valid()){
 				// (true) if the data is valid
+				console.log('success')
 			} else {
 				// (false) if the data is not valid
+				console.log('fail')
+				// Get error messages
+				console.log(inspect.errors())
 			}
 		</script>
 	</body>

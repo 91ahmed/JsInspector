@@ -427,13 +427,25 @@ class JsInspector
     }
 
     /**
-     *	Get the error messages as object
+     *	Get the errors messages as object
      *
      *	@return object
      */
     errors () 
     {
     	return this.error
+    }
+
+    show (element)
+    {
+        if (this.valid() == false)
+        {
+            let error = "<span class='js-inspector-error'>"
+            error += this.fieldName+' '+this.error[this.fieldName]
+            error += "</span>"
+
+            document.getElementById(element).innerHTML += error
+        }
     }
 
     valid ()
@@ -445,3 +457,5 @@ class JsInspector
     	}
     }
 }
+
+//module.exports = JsInspector;
