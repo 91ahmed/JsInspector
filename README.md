@@ -28,13 +28,13 @@ if(inspect.valid()){
 ```
 #### Available validation rules
 ` required() `
-> The field must be not empty and it considered **empty** if the value is **null** or empty string or array.
+> The field must be not empty and it considered **_empty_** if the value is **_null_** or empty string or array.
+
+` numeric() `
+> Should only include **_whole numbers_** (0,1,2,3..) without negative, fractions or decimals.
+
+` integer() `
+> Should only include **_integers numbers_** that can be positive, negative, or zero.
 
 ` email() `
 > Must be a valid email address.
-
-` numeric() `
-> It should only include **whole numbers** (0,1,2,3..) without negative, fractions or decimals.
-
-` integer() `
-> It should only include **integers numbers** that can be positive, negative, or zero.
