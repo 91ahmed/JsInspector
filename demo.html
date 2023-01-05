@@ -4,9 +4,7 @@
 		<title>Js-Inspector test</title>
 	</head>
 	<body>
-		<div id="c1"></div>
-		<br/>
-		<div id="c2"></div>
+		<h3>Open console log to check the result</h3>
 
 		<script src="src/js-inspector.js"></script>
 
@@ -15,7 +13,7 @@
 
 			inspect.data('ahmed').field('username').alpha().required()
 			inspect.data('ahmed@gmail.com').field('email').email().required()
-			inspect.data('123678687').field('password').max(30).min(8).required()
+			inspect.data('123').field('password').max(30).min(8).required()
 
 			// Check validation
 			if(inspect.valid()){

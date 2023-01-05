@@ -18,9 +18,9 @@ inspect.data('12345678').field('password').max(30).min(8).required()
 
 // Check whether the validation process is successful or not
 if(inspect.valid()){
-	// (true - success) if the data is valid
+	// (true - success) the data is valid
 } else {
-	// (false - fail) if the data is not valid
+	// (false - fail) the data is not valid
 
 	// Display errors
 	console.log(inspect.errors())
