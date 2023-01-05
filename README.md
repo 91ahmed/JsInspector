@@ -73,14 +73,14 @@ if(inspect.valid()){
 
 ` max() ` ` min() `
 > ` max() ` the value must be less than or equal to a maximum value.
-<br/>
+
 > ` min() ` the value must have a minimum value.
 
 ` pattern() `
-> This method allows you to write your own Regex pattern.
-_Example:_
+> This method allows you to write your own Regex pattern..
 ``` javascript
-	const inspect = new JsInspector()
+//Example
+const inspect = new JsInspector()
 
-	inspect.data('ahmed').field('fieldname').pattern(/^[A-Za-z ]*$/)
+inspect.data('ahmed').field('fieldname').pattern(/^[A-Za-z ]*$/)
 ```
