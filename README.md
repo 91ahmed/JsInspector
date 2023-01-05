@@ -1,12 +1,12 @@
 ## Js-Inspector
 <dd> Pure javascript library to validate your application's incoming data. It includes several validation rules that you may apply to the data. </dd>
 
-#### <span style="color:red;">#</span> How to use
+#### # How to Use
 ``` html
 <!-- Include this file 'src/js-inspector' in your project -->
 <script src="src/js-inspector.js"></script>
 ```
-#### Example
+#### # Example
 ``` javascript
 // Create new instance from JsInspector
 const inspect = new JsInspector()
@@ -37,7 +37,7 @@ if(inspect.valid()){
    console.log(inspect.errors())
 }
 ```
-#### Available validation rules
+#### # Available Validation Rules
 ` required() `
 > The data must be not empty and it considered **_empty_** if the value is **_null_** or empty string or array.
 
@@ -67,3 +67,6 @@ if(inspect.valid()){
 
 ` url() `
 > Must be a valid URL.
+
+` date() `
+> Validate the date to match this format ☛ _(YYYY-MM-DD)_.
