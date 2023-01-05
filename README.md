@@ -1,5 +1,5 @@
 ## Js-Inspector
-<dd> Pure <mark>javascript</mark> library to validate your application's incoming data. It includes several validation rules that you may apply to the data. </dd>
+<dd> Pure javascript library to validate your application's incoming data. It includes several validation rules that you may apply to the data. </dd>
 
 #### # How to Use
 ``` html
@@ -60,7 +60,7 @@ if(inspect.valid()){
 > Similar to `alpha()` but accept spaces **_(letters, spaces)_**.
 
 ` alnum() `
-> The data must contain only alphanumeric characters **_(letters, numbers)_**.
+> The value must contain only alphanumeric characters **_(letters, numbers)_**.
 
 ` alnums() `
 > Similar to `alnum()` but accept spaces **_(letters, numbers, spaces)_**.
@@ -69,4 +69,8 @@ if(inspect.valid()){
 > Must be a valid URL.
 
 ` date() `
-> Validate the date to <mark>match</mark> this format ☛ _(YYYY-MM-DD)_.
+> Validate the date to match this format ☛ _(yyyy-mm-dd)_.
+
+` max() ` ` min() `
+> ` max() ` the value must be less than or equal to a maximum value.
+> ` min() ` the value must have a minimum value.
