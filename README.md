@@ -79,8 +79,64 @@ if(inspect.valid()){
 ` pattern() `
 > This method allows you to write your own Regex pattern..
 ``` javascript
-//Example
+// Example
 const inspect = new JsInspector()
 
 inspect.data('ahmed').field('fieldname').pattern(/^[A-Za-z ]*$/)
 ```
+
+` match() `
+> The data must have a matching value. It usually used to confirm the password.
+``` javascript
+// Example
+const inspect = new JsInspector()
+
+inspect.data('1d23').match('1d23')
+```
+
+#### # Other Methods
+` errors() `
+> Get all errors messages as an object.
+``` javascript
+// Example
+const inspect = new JsInspector()
+
+inspect.data('hello').email().required()
+
+// Display errors
+console.log(inspect.errors())
+```
+
+` show() `
+> Displays the error message within a specific item, it takes one parameter the element _id_.
+``` html
+<!-- element with ID -->
+<p id="error-msg"></p>
+```
+``` javascript
+// Js Example
+const inspect = new JsInspector()
+
+inspect.data('hello').email().required().show('error-msg')
+```
+
+` valid() `
+> Check whether the validation process is successful or not. it return boolean _ture_ for success _false_ for fail.
+``` javascript
+// Example
+const inspect = new JsInspector()
+
+inspect.data('notvalidemail').email().required()
+
+if(inspect.valid()){
+   // (true) success
+} else {
+   // (false) fail
+}
+```
+
+` data() `
+> Determine the data (value) to validate. it takes one parameter _(data)_
+
+` field() `
+> Determine the field (input) name.. It is very important to specify because it is used in error messages. it takes one parameter _(fieldname)_

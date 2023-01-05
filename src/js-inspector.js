@@ -1,5 +1,5 @@
 /**
- *	Js-Inspector is a validator class to check if the data matches the conditions or not.
+ *	Js-Inspector is a class for data validation.
  *
  *	@author name ( ahmed hasasn )
  */
