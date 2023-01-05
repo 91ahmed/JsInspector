@@ -1,5 +1,5 @@
 ## Js-Inspector
-<dd> Pure javascript library to validate your application's incoming data. It includes several validation rules that you may apply to the data. </dd>
+<dd> Pure <mark>javascript</mark> library to validate your application's incoming data. It includes several validation rules that you may apply to the data. </dd>
 
 #### # How to Use
 ``` html
@@ -69,4 +69,4 @@ if(inspect.valid()){
 > Must be a valid URL.
 
 ` date() `
-> Validate the date to match this format ☛ _(YYYY-MM-DD)_.
+> Validate the date to <mark>match</mark> this format ☛ _(YYYY-MM-DD)_.
