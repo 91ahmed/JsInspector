@@ -1,5 +1,7 @@
 ## Js-Inspector
-### Pure javascript class to validate your application's incoming data.
+### Pure javascript library to validate your application's incoming data.
+### It includes several validation rules that you may apply to the data.
+
 #### Example
 ``` javascript
 const inspect = new JsInspector()
