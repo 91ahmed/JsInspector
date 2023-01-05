@@ -13,9 +13,9 @@ const inspect = new JsInspector()
 
 // Add your validation rules
 inspect.data('ahmed')
-	   .field('username')
-	   .alpha()
-	   .required()
+       .field('username')
+       .alpha()
+       .required()
 
 inspect.data('ahmed@gmail.com')
        .field('email')
@@ -23,9 +23,9 @@ inspect.data('ahmed@gmail.com')
        .required()
 
 inspect.data('12345678')
-	   .field('password')
-	   .max(30).min(8)
-	   .required()
+       .field('password')
+       .max(30).min(8)
+       .required()
 
 // Check whether the validation process is successful or not
 if(inspect.valid()){
