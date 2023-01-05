@@ -12,9 +12,20 @@
 const inspect = new JsInspector()
 
 // Add your validation rules
-inspect.data('ahmed').field('username').alpha().required()
-inspect.data('ahmed@gmail.com').field('email').email().required()
-inspect.data('12345678').field('password').max(30).min(8).required()
+inspect.data('ahmed')
+	   .field('username')
+	   .alpha()
+	   .required()
+
+inspect.data('ahmed@gmail.com')
+       .field('email')
+       .email()
+       .required()
+
+inspect.data('12345678')
+	   .field('password')
+	   .max(30).min(8)
+	   .required()
 
 // Check whether the validation process is successful or not
 if(inspect.valid()){
@@ -28,13 +39,31 @@ if(inspect.valid()){
 ```
 #### Available validation rules
 ` required() `
-> The field must be not empty and it considered **_empty_** if the value is **_null_** or empty string or array.
+> The data must be not empty and it considered **_empty_** if the value is **_null_** or empty string or array.
 
 ` numeric() `
-> Should only include **_whole numbers_** (0,1,2,3..) without negative, fractions or decimals.
+> Should only contain **_whole numbers_** (0,1,2,3..) without negative, fractions or decimals.
 
 ` integer() `
-> Should only include **_integers numbers_** that can be positive, negative, or zero.
+> Should only contain **_integer numbers_** that can be positive, negative, or zero.
 
 ` email() `
 > Must be a valid email address.
+
+` decimal() `
+> The data under validation must be numeric contains **_whole and a fractional_**.
+
+` alpha() `
+> The data must contain only alphabetic characters **_(letters)_**.
+
+` alphas() `
+> Similar to `alpha()` but accept spaces **_(letters, spaces)_**.
+
+` alnum() `
+> The data must contain only alphanumeric characters **_(letters, numbers)_**.
+
+` alnums() `
+> Similar to `alnum()` but accept spaces **_(letters, numbers, spaces)_**.
+
+` url() `
+> Must be a valid URL.
