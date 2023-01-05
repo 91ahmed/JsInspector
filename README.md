@@ -77,7 +77,7 @@ if(inspect.valid()){
 > ` min() ` the value must have a minimum value.
 
 ` pattern() `
-> This method allows you to write your own Regex pattern..
+> This method allows you to write your own Regex pattern.
 ``` javascript
 // Example
 const inspect = new JsInspector()
@@ -108,9 +108,9 @@ console.log(inspect.errors())
 ```
 
 ` show() `
-> Displays the error message within a specific item, it takes one parameter the element _id_.
+> Displays the error message within a specific element, it takes one parameter the element _id_.
 ``` html
-<!-- element with ID -->
+<!-- element with ID to display incoming errors -->
 <p id="error-msg"></p>
 ```
 ``` javascript
@@ -121,7 +121,7 @@ inspect.data('hello').email().required().show('error-msg')
 ```
 
 ` valid() `
-> Check whether the validation process is successful or not. it return boolean _ture_ for success _false_ for fail.
+> Check whether the validation process is successful or not. it return boolean (_ture_) for success (_false_) for fail.
 ``` javascript
 // Example
 const inspect = new JsInspector()
