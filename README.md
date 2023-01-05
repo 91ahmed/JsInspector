@@ -26,3 +26,6 @@ if(inspect.valid()){
 	console.log(inspect.errors())
 }
 ```
+#### Available validation rules
+``` required() ``` <br/>
+the field must be not empty and it considered "empty" if the value is null or empty string or array.
