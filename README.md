@@ -2,6 +2,11 @@
 ### Pure javascript library to validate your application's incoming data.
 ### It includes several validation rules that you may apply to the data.
 
+#### How to use
+``` html
+<!-- Include this file 'src/js-inspector' in your project -->
+<script src="src/js-inspector.js"></script>
+```
 #### Example
 ``` javascript
 const inspect = new JsInspector()
