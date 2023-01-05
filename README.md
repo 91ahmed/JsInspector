@@ -27,14 +27,14 @@ if(inspect.valid()){
 }
 ```
 #### Available validation rules
-``` required() ``` <br/>
-###### The field must be not empty and it considered "empty" if the value is null or empty string or array.
+``` required() ```
+##### The field must be not empty and it considered "empty" if the value is null or empty string or array.
 
-``` email() ``` <br/>
-###### Must be a valid email address.
+``` email() ```
+##### Must be a valid email address.
 
-``` numeric() ``` <br/>
-###### It should only include "whole numbers" (0,1,2,3..) without negative, fractions or decimals.
+``` numeric() ```
+##### It should only include "whole numbers" (0,1,2,3..) without negative, fractions or decimals.
 
-``` integer() ``` <br/>
-###### It should only include "integers numbers" that can be positive, negative, or zero.
+``` integer() ```
+##### It should only include "integers numbers" that can be positive, negative, or zero.
