@@ -1,5 +1,5 @@
 ## Js-Inspector
-### Pure javascript library to validate your application's incoming data. It includes several validation rules that you may apply to the data.
+<dd> _Pure javascript library to validate your application's incoming data. It includes several validation rules that you may apply to the data._ </dd>
 
 #### How to use
 ``` html
@@ -29,12 +29,12 @@ inspect.data('12345678')
 
 // Check whether the validation process is successful or not
 if(inspect.valid()){
-	// (true - success) the data is valid
+   // (true - success) the data is valid
 } else {
-	// (false - fail) the data is not valid
+   // (false - fail) the data is not valid
 
-	// Display errors
-	console.log(inspect.errors())
+   // Display errors
+   console.log(inspect.errors())
 }
 ```
 #### Available validation rules
