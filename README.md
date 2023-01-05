@@ -28,4 +28,4 @@ if(inspect.valid()){
 ```
 #### Available validation rules
 ``` required() ``` <br/>
-the field must be not empty and it considered "empty" if the value is null or empty string or array.
+###### The field must be not empty and it considered "empty" if the value is null or empty string or array.
