@@ -136,9 +136,16 @@ if(inspect.valid()){
 ```
 
 ` data() `
-> Determine the data to validate. this method takes one parameter _(data)_
+> Determine the data to be validated. 
+> It takes one parameter _(data)_
+```javascript 
+data('value') // @param mixed, (data)
+```
 
 ` field() `
 > Determine the field name.. The class uses the value in this method for error messages, so it's very important to specify to get meaningful error messages. 
 
-> It takes one parameter _(fieldname)_ ```javascript field('username') ```
+> It takes one parameter _(fieldname)_ 
+```javascript 
+field('username') // @param string, (input name)
+```
