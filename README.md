@@ -96,7 +96,7 @@ inspect.data('1d23').match('1d23')
 
 #### # Other Methods
 ` errors() `
-> Get all errors messages as an object.
+> This method returns error messages as an object.
 ``` javascript
 // Example
 const inspect = new JsInspector()
@@ -108,7 +108,8 @@ console.log(inspect.errors())
 ```
 
 ` show() `
-> Displays the error message within a specific element, it takes one parameter the element _id_.
+> Displays the error message within a specific element. 
+> It takes one parameter the element _(id)_.
 ``` html
 <!-- element with ID to display incoming errors -->
 <p id="error-msg"></p>
@@ -121,7 +122,8 @@ inspect.data('hello').email().required().show('error-msg')
 ```
 
 ` valid() `
-> Check whether the validation process is successful or not. it return boolean (_ture_) for success (_false_) for fail.
+> Check whether the validation process is successful or not. 
+> This method return boolean (_ture_) for success (_false_) for fail.
 ``` javascript
 // Example
 const inspect = new JsInspector()
