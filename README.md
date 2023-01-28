@@ -1,5 +1,5 @@
 ## Js-Inspector
-<dd> Pure javascript library to validate your application's incoming data. Include several validation rules that you may apply to the data. </dd>
+<dd> Pure javascript library for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules. </dd>
 
 #### # How to Use
 ``` html
@@ -151,7 +151,3 @@ data('value') // @param mixed, (data)
 ```javascript 
 field('username') // @param string, (input name)
 ```
-
-<br/></br>
-
-![logo](https://raw.githubusercontent.com/91ahmed/91ahmed/main/logo-ahmed.png)
