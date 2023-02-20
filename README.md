@@ -3,12 +3,12 @@
 
 #### # Install via npm
 ``` bash
-npm i js-jsinspector
+npm i jsinspector-js
 ```
 #### # Example
 ``` javascript
 // Import package
-const JsInspector = require('js-jsinspector')
+const JsInspector = require('jsinspector-js')
 
 // Create new instance from JsInspector
 const inspect = new JsInspector()
