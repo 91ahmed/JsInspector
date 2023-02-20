@@ -39,7 +39,7 @@ if(inspect.valid()){
    console.log(inspect.errors())
 }
 ```
-#### # Available Validation Rules
+#### # Available Rules
 ` required() `
 > The data must be not empty and it considered **_empty_** if the value is **_null_** or empty string or array.
 
@@ -88,7 +88,7 @@ inspect.data('ahmed').field('fieldname').pattern(/^[A-Za-z ]*$/)
 ```
 
 ` match() `
-> The data should match the given value. this rule usually used to confirm the password.
+> The data should match the given value.
 ``` javascript
 // Example
 const inspect = new JsInspector()
@@ -140,14 +140,14 @@ if(inspect.valid()){
 ```
 
 ` data() `
-> Determine the data to be validated. 
+> Specify the data to be validated. 
 > It takes one parameter _(data)_
 ```javascript 
 data('value') // @param mixed, (data)
 ```
 
 ` field() `
-> Determine the field name.. The class uses the value in this method for error messages, so it's very important to specify to get meaningful error messages. 
+> Specify the field name. The class uses the value in this method for error messages, so it's very important to specify to get meaningful error messages. 
 
 > It takes one parameter _(fieldname)_ 
 ```javascript 
