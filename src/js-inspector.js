@@ -458,4 +458,4 @@ class JsInspector
     }
 }
 
-//module.exports = JsInspector;
+module.exports = JsInspector;

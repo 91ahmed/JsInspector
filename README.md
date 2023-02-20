@@ -1,5 +1,5 @@
 ## Js-Inspector
-<dd> Pure javascript library for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules. </dd>
+<dd> Javascript package for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules. </dd>
 
 #### # How to Use
 ``` html

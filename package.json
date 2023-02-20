@@ -1,8 +1,8 @@
 {
   "name": "js-inspector",
   "version": "1.0.0",
-  "description": "a well-constructed class for data validation with a variety of methods.",
-  "main": "js-inspector.js",
+  "description": "Javascript package for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules.",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
@@ -16,7 +16,8 @@
     "js",
     "validator",
     "javascript",
-    "validation"
+    "validation",
+    "javascript validation"
   ],
   "author": "ahmed hassan",
   "license": "ISC",
