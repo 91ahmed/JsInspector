@@ -1,13 +1,15 @@
 ## Js-Inspector
 <dd> Javascript package for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules. </dd>
 
-#### # How to Use
-``` html
-<!-- Include this file 'src/js-inspector' in your project -->
-<script src="src/js-inspector.js"></script>
+#### # Install via npm
+``` bash
+npm i js-jsinspector
 ```
 #### # Example
 ``` javascript
+// Import package
+const JsInspector = require('js-jsinspector')
+
 // Create new instance from JsInspector
 const inspect = new JsInspector()
 

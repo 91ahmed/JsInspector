@@ -1,5 +1,5 @@
 {
-  "name": "jsinspector",
+  "name": "js-jsinspector",
   "version": "1.0.0",
   "description": "Javascript package for data validation, allow javascript developers to validate the application incoming data with a variety of validation rules.",
   "main": "index.js",

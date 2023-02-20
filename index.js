@@ -1,3 +1,3 @@
-const JsInspector = require('./jsinspector')
+const JsInspector = require('./src/js-inspector')
 
 module.exports = JsInspector
